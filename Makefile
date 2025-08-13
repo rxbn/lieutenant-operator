@@ -13,7 +13,7 @@ include Makefile.vars.mk
 e2e_make := $(MAKE) -C e2e
 go_build ?= go build -o $(BIN_FILENAME) main.go
 
-setup-envtest ?= go run sigs.k8s.io/controller-runtime/tools/setup-envtest
+setup-envtest ?= go tool sigs.k8s.io/controller-runtime/tools/setup-envtest
 
 # Run tests (see https://book.kubebuilder.io/reference/envtest.html?highlight=envtest#configuring-envtest-for-integration-tests)
 ENVTEST_ASSETS_DIR=$(shell pwd)/testbin

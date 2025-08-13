@@ -407,7 +407,6 @@ The token is stored under the key "token".
 In the case of GitLab, this would be a Project Access Token with read-write access to the repository.
 | *`ciVariables`* __xref:{anchor_prefix}-github-com-projectsyn-lieutenant-operator-api-v1alpha1-envvar[$$EnvVar$$] array__ | CIVariables is a list of key-value pairs that will be set as CI variables in the Git repository.
 
-
 The variables are not expanded like PodSpec environment variables.
 | *`tenantRef`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#localobjectreference-v1-core[$$LocalObjectReference$$]__ | TenantRef references the tenant this repo belongs to
 |===
@@ -451,7 +450,6 @@ If set, the Lieutenant operator will store an access token into this secret, whi
 The token is stored under the key "token".
 In the case of GitLab, this would be a Project Access Token with read-write access to the repository.
 | *`ciVariables`* __xref:{anchor_prefix}-github-com-projectsyn-lieutenant-operator-api-v1alpha1-envvar[$$EnvVar$$] array__ | CIVariables is a list of key-value pairs that will be set as CI variables in the Git repository.
-
 
 The variables are not expanded like PodSpec environment variables.
 |===

@@ -10,7 +10,7 @@ CRD_ROOT_DIR ?= config/crd/
 CRD_DOCS_REF_PATH ?= docs/modules/ROOT/pages/references/api-reference.adoc
 
 KIND_NODE_VERSION ?= v1.24.2
-KIND ?= go run sigs.k8s.io/kind
+KIND ?= go tool sigs.k8s.io/kind
 
 ENABLE_LEADER_ELECTION ?= false
 
@@ -26,7 +26,7 @@ BATS_FILES ?= .
 
 INTEGRATION_TEST_DEBUG_OUTPUT ?= false
 
-KUSTOMIZE ?= go run sigs.k8s.io/kustomize/kustomize/v5
+KUSTOMIZE ?= go tool sigs.k8s.io/kustomize/kustomize/v5
 
 # Image URL to use all building/pushing image targets
 DOCKER_IMG ?= docker.io/projectsyn/lieutenant-operator:$(IMG_TAG)
